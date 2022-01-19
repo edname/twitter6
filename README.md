@@ -4,21 +4,25 @@
 * [Setup](#setup)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
+This project will be simple twitter basic functuonality clone.
 	
 ## Technologies
 Project is created with:
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+1. Ruby version ~> 2.7.5
+* rbenv install 2.7.5
+* rbenv global 2.7.5
+* rbenv rehash # This is probably what you didn't do, start a new terminal or use rehash
+2. Rails version ~> 7.0.1
 	
 ## Setup
-To run this project, install it locally using npm:
+To run this project, install it locally using:
 
 ```
-$ cd ../lorem
-$ npm install
-$ npm start
+$ Clone this repo 
+$ Navigate into this project's directory: cd rails-twitter
+$ Install the required gems, by running: bundle install
+$ Start the local server, by running" rails server
+$ View by visiting: localhost:3000
 ```
 
 ## Code Examples
