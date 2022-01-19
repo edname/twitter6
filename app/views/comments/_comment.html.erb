@@ -1,0 +1,5 @@
+<div id="<%= dom_id(comment) %>">
+    <%= comment.content %>
+    <%= time_tag comment.created_at, "data-local": "time-ago" %>
+    <%= link_to "Destroy", [comment.post, comment], data:{turbo_method: :delete, turbo_confirm: "Are you sure?", } %>
+</div>
