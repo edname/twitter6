@@ -30,6 +30,11 @@ email: <%= user.email %><br>
 <%= 'confirmation_token'.humanize  %>
 <%= user.confirmation_token %><br>
 
+# Erorr it Deletes all users 
+<%= link_to "Destroy", user, 
+    class: "whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-gray-600 hover:bg-gray-400",
+    data:{turbo_method: :delete, turbo_confirm: "Are you sure?" } 
+%>
 
 <hr>
 
