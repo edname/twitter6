@@ -1,0 +1,19 @@
+
+
+
+<div class="p-6 m-5 max-w-sm mx-0 bg-white rounded-xl shadow-lg flex space-x-4">
+  <div>
+    <div class="text-xl font-medium text-black"><%= @product.title %></div>
+    <p class="text-slate-500"><%= @product.short_text %></p>
+    <p class="text-slate-500"><%= @product.youtube_url %></p>
+    <p class="text-slate-500"><%= @product.long_text %></p>
+  </div>
+</div>
+
+
+    <%= link_to 'Edit this product', edit_product_path(@product), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 hover:bg-gray-300 inline-block font-medium" %>
+    <div class="inline-block ml-2">
+      <%= link_to 'Destroy this product', product_path(@product), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 hover:bg-gray-300 font-medium" %>
+    </div>
+
+<%= link_to 'Back to products', products_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 hover:bg-gray-300 inline-block font-medium" %>

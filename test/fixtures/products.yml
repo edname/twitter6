@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  short_text: MyText
+  youtube_url: MyString
+  long_text: MyText
+
+two:
+  title: MyString
+  short_text: MyText
+  youtube_url: MyString
+  long_text: MyText
