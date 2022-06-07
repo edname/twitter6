@@ -6,19 +6,21 @@
         <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
     </div>
 
-    <div class="my-5">
-        <%= form.label :long_text %>
-        <%= form.rich_text_area :long_text, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-    </div>
+    <%= form.select :category, Category.all, :prompt => "Select One" %>
 
     <div class="my-5">
         <%= form.label :short_text %>
-        <%= form.text_field :short_text, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+        <%= form.rich_text_area :short_text, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
     </div>
 
     <div class="my-5">
         <%= form.label :youtube_url %>
         <%= form.text_field :youtube_url, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+    </div>
+
+    <div class="my-5">
+        <%= form.label :long_text %>
+        <%= form.rich_text_area :long_text, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
     </div>
 
     <div class="inline">

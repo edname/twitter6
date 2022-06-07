@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   resources :users
   resources :products
+  resources :categories
 
   resources :posts do
     resources :comments
